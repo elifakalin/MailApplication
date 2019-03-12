@@ -25,11 +25,7 @@ public class SendMailApplication extends SpringBootServletInitializer {
 
     @Bean(value = "sendMailExecutor")
     public TaskExecutor taskExecutor() {
-    /*    ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(5);
-        executor.setMaxPoolSize(10);
-        executor.setQueueCapacity(25);*/
-        System.out.println("denememe");
+   
         return new ThreadPoolTaskExecutor();
     }
 }
